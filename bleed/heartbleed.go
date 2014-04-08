@@ -25,7 +25,7 @@ func buildEvilMessage(payload []byte) []byte {
 	if err != nil {
 		panic(err)
 	}
-	err = binary.Write(&buf, binary.BigEndian, uint16(len(payload)+100))
+	err = binary.Write(&buf, binary.BigEndian, uint16(65535)
 	if err != nil {
 		panic(err)
 	}
