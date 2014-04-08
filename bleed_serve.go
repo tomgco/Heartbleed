@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-var PAYLOAD = []byte("heartbleed.filippo.io")
+var PAYLOAD = []byte(">>>>>>(((%$£^")
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "http://filippo.io/Heartbleed", http.StatusFound)
